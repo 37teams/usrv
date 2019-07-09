@@ -15,6 +15,7 @@
     "chalk": "^2.4.2",
     "eventemitter3": "^3.1.0",
     "fastify": "^2.1.0",
+    "get-ip-address": "^1.0.0",
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "nid": "^0.3.2",
@@ -22,6 +23,7 @@
     "seneca-balance-client": "^0.7.0",
     "seneca-basic": "^0.6.0",
     "seneca-mesh": "^1.0.0",
+    "seneca-pino-adapter": "^0.1.4",
     "seneca-promisify": "^0.7.1",
     "uuid": "^3.3.2"
   },

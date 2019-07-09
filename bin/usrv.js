@@ -100,7 +100,7 @@ async function start() {
 
   await service.ready()
 
-  console.log('service is ready')
+  service.log.info('service is ready')
 }
 
 start()

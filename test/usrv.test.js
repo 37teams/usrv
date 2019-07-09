@@ -8,8 +8,8 @@ const usrv = require('../usrv')
 describe('usrv', () => {
   it('Starts non mesh service', async () => {
     const srvfile = config => {
-      config.transport.mesh = 'none'
-      config.transport.listen = 3000
+      config.mesh = 'none'
+      config.listen = 55000
     }
 
     const srv = function() {
@@ -20,7 +20,7 @@ describe('usrv', () => {
 
     await instance.ready()
 
-    const res = await Wreck.request('post', 'http://127.0.0.1:3000/act', {
+    const res = await Wreck.request('post', 'http://127.0.0.1:55000/act', {
       payload: { a: 'b' }
     })
     const body = await Wreck.read(res)

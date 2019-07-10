@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/37teams/usrv/compare/v0.1.3...v0.1.4) (2019-07-10)
+
+
+### Bug Fixes
+
+* find host ([b2cfcbc](https://github.com/37teams/usrv/commit/b2cfcbc))
+
+
+
 ### [0.1.3](https://github.com/37teams/usrv/compare/v0.1.2...v0.1.3) (2019-07-10)
 
 

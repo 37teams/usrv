@@ -25,6 +25,7 @@
     "seneca-mesh": "^1.0.0",
     "seneca-pino-adapter": "^0.1.4",
     "seneca-promisify": "^0.7.1",
+    "seneca-repl": "^1.2.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

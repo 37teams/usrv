@@ -1,7 +1,7 @@
 const Seneca = require('seneca')
 const _ = require('lodash')
 const findIp = require('get-ip-address')
-const dnsLookup = require('./lib/dns-lookup')
+const { findDNS } = require('./lib/dns-lookup')
 const registerPlugins = require('./lib/register-plugins')
 const configurationUtils = require('./lib/parse-configuration')
 const envs = require('./lib/envs')
@@ -33,7 +33,7 @@ async function Usrv(srv, srvfile, pkg) {
       guess: { active: false },
       custom: {
         active: true,
-        find: dnsLookup(envs.BASE_SERVICE_DNS)
+        find: findDNS(envs.BASE_SERVICE_DNS)
       },
       multicast: { active: false },
       registry: { active: false }

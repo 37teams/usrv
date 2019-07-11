@@ -1,6 +1,6 @@
 {
   "name": "usrv",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A service container for seneca microservice",
   "main": "src/usrv.js",
   "bin": {

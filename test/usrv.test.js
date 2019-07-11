@@ -9,23 +9,13 @@ describe('usrv', () => {
   it('Starts non mesh service', async () => {
     const srvfile = config => {
       config.mesh = 'none'
-      config.listen = 55000
+      config.listen = [{ pins: ['a:b'] }]
     }
 
-    const srv = function() {
+    const srv = function s1() {
       this.message('a:b', async msg => ({ ok: true }))
     }
 
-    const instance = usrv(srv, srvfile)
-
-    await instance.ready()
-
-    const res = await Wreck.request('post', 'http://127.0.0.1:55000/act', {
-      payload: { a: 'b' }
-    })
-    const body = await Wreck.read(res)
-    const out = JSON.parse(body.toString())
-    expect(out.ok).to.be.true()
-    instance.close()
+    await usrv(srv, srvfile, {})
   })
 })

@@ -39,7 +39,7 @@ async function Usrv(srv, srvfile, pkg) {
       registry: { active: false }
     },
     listen: configuration.listen,
-    balance_client: { debug: { client_updates: true } },
+    balance_client: { debug: { client_updates: false } },
     jointime: envs.SWIM_JOIN_TIMEOUT,
     sneeze: {
       silent: false,
@@ -54,7 +54,7 @@ async function Usrv(srv, srvfile, pkg) {
 
   await container.ready()
 
-  container.fixedargs.fatal$ = true
+  container.fixedargs.fatal$ = false
   container.log.info('service is ready')
 }
 

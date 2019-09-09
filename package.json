@@ -20,7 +20,7 @@
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "nid": "^0.3.2",
-    "seneca": "^3.11.0",
+    "seneca": "3.11.0",
     "seneca-balance-client": "^0.7.0",
     "seneca-basic": "^0.6.0",
     "seneca-mesh": "^1.0.0",
